@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { OsiAppComponent } from './osi-app.component';
+import { GestionefaiComponent } from './gestionefai/gestionefai.component';
 
 @NgModule({
   imports: [
@@ -9,8 +10,9 @@ import { AppComponent } from './app.component';
   ],
   providers: [],
   declarations: [
-    AppComponent
+    OsiAppComponent,
+    GestionefaiComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [OsiAppComponent]
 })
 export class AppModule { }
