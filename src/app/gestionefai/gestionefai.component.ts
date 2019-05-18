@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StatutEfai, IEfai } from '../model/IEfai';
+import { EfaiServiceService } from '../efai.service';
 
 @Component({
   selector: 'app-gestionefai',
@@ -7,19 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GestionefaiComponent implements OnInit {
 
-  critStatuts: String[] ;
+  critStatuts: StatutEfai[] ;
   efais: any[];
   
-  constructor() { }
+  constructor( private efaiService:EfaiServiceService) { }
 
   ngOnInit() {
     this.critStatuts = [
-      "Créée",
-      "En cours",
-      "Validée",
-      "Abandonnée"
+      StatutEfai.CREEE,
+      StatutEfai.EN_COURS,
+      StatutEfai.VALIDEE,
+      StatutEfai.ABANDONNEE,
     ];
+    this.efais = this.efaiService.getEfais();
+    console.log('efais :'  +this.efais);
+    
   }
 
+    efaisFiltrees(): IEfai[] {
+      return this.efais;
+    }
 
 }

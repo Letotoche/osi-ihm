@@ -11,8 +11,8 @@ export const EFAIS: IEfai[] = [
             montantBudget:10000
         },
         statut: StatutEfai.CREEE,
-        dateCreation: toDate('25/09/2018'),
-        dateDerniereModif: toDate('01/10/2018')
+        dateCreation: new Date('25/09/2018'),
+        dateDerniereModif: new Date('01/10/2018')
     },
     {
         identifiant: 2,
@@ -23,8 +23,8 @@ export const EFAIS: IEfai[] = [
             montantBudget:25300
         },
         statut: StatutEfai.EN_COURS,
-        dateCreation: toDate('25/12/2019'),
-        dateDerniereModif: toDate('01/03/2019')
+        dateCreation: new Date('25/12/2019'),
+        dateDerniereModif: new Date('01/03/2019')
     }
     
 ];
