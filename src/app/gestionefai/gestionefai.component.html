@@ -5,11 +5,10 @@
           <div class="form-group row">
             <label for="critProjet" class="col-sm-1 text-right col-form-label">Projet</label>
             <div class="col-sm-1">
-              <input type="text" class="form-control" id="critProjet"/>
+              <input type="text" class="form-control tailleprojet" id="critProjet"/>
             </div>
-            
-            <label for="critLibelleProjet" class="col-sm-2 text-right col-form-label">Libellé du projet</label>
-            <div class="col-sm-8">
+            <label for="critLibelleProjet" class="col-lg-2 text-right col-form-label">Libellé du projet</label>
+            <div class="col-lg">
               <input type="text" class="form-control" id="critLibelleProjet"/>
             </div>
           </div>
@@ -33,8 +32,8 @@
 
 
           <div class="form-group row">
-            <label for="critProjet" class="col-sm-2 col-form-label">Statut</label>
-            <div class="col-sm-6">
+            <label for="critProjet" class="col-sm-1 text-right col-form-label">Statut</label>
+            <div class="col-sm-2">
                 <select id="inputState" class="form-control">
                     <option value=""></option>
                     <option *ngFor="let statut of critStatuts">{{statut}}</option>
@@ -54,7 +53,7 @@
   <div class="row">
     <div class="col">
 
-      <table class="table table-dark">
+      <table class="table">
         <thead>
           <tr>
             <th scope="col">N°Efai</th>
@@ -65,7 +64,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let efai of efaisFiltrees()">
-            <th scope="row">{{efai.identifiant}}</th>
+            <td>{{efai.identifiant}}</td>
             <td>{{efai.projet.codeProjet}}</td>
             <td>{{efai.projet.libelle}}</td>
             <td>{{efai.dateDerniereModif | date:"dd/MM/yyyy"}}</td>

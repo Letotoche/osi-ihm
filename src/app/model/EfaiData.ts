@@ -25,6 +25,30 @@ export const EFAIS: IEfai[] = [
         statut: StatutEfai.EN_COURS,
         dateCreation: new Date('25/12/2019'),
         dateDerniereModif: new Date('01/03/2019')
+    },
+    {
+        identifiant: 3,
+        projet: {
+            codeProjet:'P00003',
+            libelle:'Projet numéro 3',            
+            statut:'Clos techniquement',
+            montantBudget:25300
+        },
+        statut: StatutEfai.ABANDONNEE,
+        dateCreation: new Date('25/12/2019'),
+        dateDerniereModif: new Date('01/03/2019')
+    },
+    {
+        identifiant: 4,
+        projet: {
+            codeProjet:'P00003',
+            libelle:'Projet numéro 4',            
+            statut:'Clos techniquement',
+            montantBudget:25300
+        },
+        statut: StatutEfai.VALIDEE,
+        dateCreation: new Date('25/12/2019'),
+        dateDerniereModif: new Date('01/03/2019')
     }
     
 ];

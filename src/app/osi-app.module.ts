@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { OsiAppComponent } from './osi-app.component';
 import { GestionefaiComponent } from './gestionefai/gestionefai.component';
+import { OsiAppRoutingModule } from './osi-app-routing.module';
 
 @NgModule({
   imports: [
-    BrowserModule
+    BrowserModule,
+    OsiAppRoutingModule
   ],
   providers: [],
   declarations: [
