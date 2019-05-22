@@ -6,19 +6,23 @@ import { GestionefaiComponent } from './gestionefai/gestionefai.component';
 import { OsiAppRoutingModule } from './osi-app-routing.module';
 import { AccueilComponent } from './accueil/accueil.component';
 import { EfaiComponent } from './efai/efai.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    OsiAppRoutingModule
-  ],
-  providers: [],
-  declarations: [
-    OsiAppComponent,
-    GestionefaiComponent,
-    AccueilComponent,
-    EfaiComponent
-  ],
-  bootstrap: [OsiAppComponent]
+   imports: [
+      BrowserModule,
+      OsiAppRoutingModule
+   ],
+   providers: [],
+   declarations: [
+      OsiAppComponent,
+      GestionefaiComponent,
+      AccueilComponent,
+      EfaiComponent,
+      NavBarComponent
+   ],
+   bootstrap: [
+      OsiAppComponent
+   ]
 })
 export class AppModule { }

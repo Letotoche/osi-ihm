@@ -21,4 +21,8 @@ export class EfaiComponent implements OnInit {
     this.efai = this.efaiService.getEfaiById(identifiant);
   }
 
+  retourGestion() {
+    this.router.navigate(['/efai/gestion']);
+  }
+
 }
