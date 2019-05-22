@@ -64,7 +64,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let efai of efaisFiltrees()">
-            <td>{{efai.identifiant}}</td>
+            <td><a [routerLink]="['/efai/edit',efai.identifiant]">{{efai.identifiant}}</a></td>
             <td>{{efai.projet.codeProjet}}</td>
             <td>{{efai.projet.libelle}}</td>
             <td>{{efai.dateDerniereModif | date:"dd/MM/yyyy"}}</td>

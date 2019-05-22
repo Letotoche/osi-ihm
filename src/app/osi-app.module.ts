@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { OsiAppComponent } from './osi-app.component';
 import { GestionefaiComponent } from './gestionefai/gestionefai.component';
 import { OsiAppRoutingModule } from './osi-app-routing.module';
+import { AccueilComponent } from './accueil/accueil.component';
+import { EfaiComponent } from './efai/efai.component';
 
 @NgModule({
   imports: [
@@ -13,7 +15,9 @@ import { OsiAppRoutingModule } from './osi-app-routing.module';
   providers: [],
   declarations: [
     OsiAppComponent,
-    GestionefaiComponent
+    GestionefaiComponent,
+    AccueilComponent,
+    EfaiComponent
   ],
   bootstrap: [OsiAppComponent]
 })

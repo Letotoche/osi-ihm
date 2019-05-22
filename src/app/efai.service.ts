@@ -12,4 +12,8 @@ export class EfaiServiceService {
   getEfais(): IEfai[] {
     return EFAIS;
   }
+
+  getEfaiById(id: number): IEfai {
+    return EFAIS.find(e => e.identifiant == id);
+  }
 }
