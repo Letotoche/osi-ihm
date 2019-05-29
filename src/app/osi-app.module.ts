@@ -7,6 +7,7 @@ import { OsiAppRoutingModule } from './osi-app-routing.module';
 import { AccueilComponent } from './accueil/accueil.component';
 import { EfaiComponent } from './efai/efai.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { EfaiFormComponent } from './efai/efai-form/efai-form.component';
 
 @NgModule({
    imports: [
@@ -19,7 +20,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
       GestionefaiComponent,
       AccueilComponent,
       EfaiComponent,
-      NavBarComponent
+      NavBarComponent,
+      EfaiFormComponent
    ],
    bootstrap: [
       OsiAppComponent

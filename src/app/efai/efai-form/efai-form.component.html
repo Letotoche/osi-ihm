@@ -1,0 +1,62 @@
+<div class="card m-2">
+  <div class="card-header">
+      eF@I
+  </div>
+  <div class="card-body">
+    <div>
+      <label>N° Projet : </label> {{efai.projet.codeProjet}}
+    </div>
+    <div>
+      <label>Libellé du Projet :</label> {{efai.projet.libelle}}
+    </div>
+    
+    <div>
+      <label>Statut du projet :</label> {{efai.projet.statut}}
+    </div>
+    
+    <div>
+        <label>Date de mise en service prévisionnelle :</label> 
+      </div>
+  </div>
+</div>
+
+<div class="card m-2">
+  <div class="card-header">
+      Intervenant projet
+  </div>
+  <div class="card-body">
+    <div>
+      <label>Rg MOAD</label> blabla
+    </div>
+    <div>
+      <label>BU MOAD</label> blabla
+    </div>
+    
+  </div>
+</div>
+
+<div class="card m-2">
+  <div class="card-header">
+      Budget (€)
+  </div>
+  <div class="card-body">
+    <div>
+      <label>Part Immobilisable :</label> blabla
+    </div>
+    <div>
+      <label>Part non immobilisable :</label> blabla
+    </div>
+    <div>
+      <label>Subvention prévue :</label> 0
+    </div>    
+    <div>
+        <label>Montant total budgété :</label> {{efai.projet.montantBudget | currency:'EUR':true:'1.0-0'}}
+      </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary">Enregistrer</button>
+
+<div class="alert alert-info" role="alert">
+    Date de dernière modification : {{efai.dateDerniereModif | date:"dd/MM/yyyy"}} par TOTO
+</div>
